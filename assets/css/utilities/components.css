@@ -12,7 +12,8 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 /* Layout */
@@ -31,15 +32,19 @@
 /* Button */
 
 .btn-primary {
+  display: block;
   text-transform: uppercase;
   padding: 0.75rem 1rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   background: linear-gradient(#ffbf00, #f2a50c);
   color: var(--cp5);
-  font: 400 1rem/1.5 "Poppins", sans-serif;
   border-radius: 5px;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
-  max-width: max-content;
   border: none;
   cursor: pointer;
+  width: fit-content;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }

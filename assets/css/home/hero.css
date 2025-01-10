@@ -1,9 +1,21 @@
 .hero {
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   background: var(--c11);
+  box-shadow: inset 0 -4rem var(--c0);
 }
 
 .hero__title::after {
   content: ".";
   color: var(--cp1);
+}
+
+.hero__picture {
+  height: 400px;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
 }
