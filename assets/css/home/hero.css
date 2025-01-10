@@ -1,0 +1,9 @@
+.hero {
+  padding: 2rem 0;
+  background: var(--c11);
+}
+
+.hero__title::after {
+  content: ".";
+  color: var(--cp1);
+}

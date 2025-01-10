@@ -1,0 +1,43 @@
+.font-ss {
+  font: 400 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+.font-s {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+
+.font-m,
+.font-m-b {
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.font-m-b {
+  font-weight: 600;
+}
+
+.font-l {
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font-ll {
+  font: 600 1.5rem/1.25 "Poppins", sans-serif;
+}
+
+.font-xll {
+  font: 600 2rem/1.125 "Poppins", sans-serif;
+}
+
+@media (min-width: 800px) {
+  .font-xll {
+    font-size: 3rem;
+  }
+  .font-ll {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .font-xll {
+    font-size: 4rem;
+  }
+}
