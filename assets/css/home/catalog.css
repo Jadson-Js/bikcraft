@@ -19,7 +19,7 @@
   margin: auto 0;
 }
 
-.card:hover .catalogCard__title::before {
+.catalog__card:hover .catalogCard__title::before {
   width: 2rem;
 }
 
