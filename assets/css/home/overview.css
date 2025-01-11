@@ -8,6 +8,7 @@
 }
 
 .overview__link {
+  transition: 0.3s ease;
   text-transform: uppercase;
   position: relative;
 }
@@ -20,6 +21,15 @@
   height: 4px;
   bottom: -0.5rem;
   left: 0;
+  transition: 0.3s ease;
+}
+
+.overview__link:hover {
+  color: var(--c-0);
+}
+
+.overview__link:hover::after {
+  background: var(--c-0);
 }
 
 .overview__boxs {

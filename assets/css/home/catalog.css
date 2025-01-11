@@ -10,7 +10,7 @@
 }
 
 .catalogCard__title::before {
-  transition: width 0.3s ease;
+  transition: 0.3s ease;
   content: "";
   display: inline-block;
   width: 1rem;

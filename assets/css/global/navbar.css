@@ -30,7 +30,7 @@
   width: 0;
   height: 3px;
   background-color: var(--c-0);
-  transition: width 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .navbar__list li a:hover::after {
