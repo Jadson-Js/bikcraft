@@ -1,0 +1,41 @@
+.insurance__cards {
+  display: grid;
+  gap: 2rem;
+}
+
+.insurance__card {
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.insuranceCard__header {
+  justify-content: space-between;
+}
+
+.insuranceCard__item {
+  position: relative;
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.insuranceCard__item::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../../images/icones/lista.svg") no-repeat;
+  width: 1rem;
+  height: 1rem;
+  left: -1.25rem;
+  bottom: 0%;
+}
+
+.insuranceCard__price {
+  align-items: end;
+}
+
+@media (min-width: 768px) {
+  .insurance__cards {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}

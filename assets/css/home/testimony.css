@@ -14,14 +14,13 @@
 .testimony__right {
   padding: 2rem;
   text-align: center;
+  max-width: 32ch;
+  margin: auto;
 }
 
 .testimony__text {
   font-family: "Merriweather", serif;
   font-style: italic;
-  max-width: 32ch;
-  margin: auto;
-
   position: relative;
 }
 
@@ -44,7 +43,12 @@
 @media (min-width: 768px) {
   .testimony {
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+  }
+
+  .testimony__right {
+    padding: 0;
+    text-align: start;
+    margin: auto auto 2rem 4rem;
   }
 
   .testimony__image {
