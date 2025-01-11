@@ -13,20 +13,8 @@
   grid-template-columns: 1fr;
 }
 
-.hero__title::after {
-  content: ".";
-  color: var(--cp-1);
-}
-
 .hero__frame {
   height: 400px;
-}
-
-.hero__image {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  object-fit: cover;
 }
 
 @media (min-width: 768px) {

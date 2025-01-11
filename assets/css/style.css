@@ -7,6 +7,7 @@
 @import url("./global/footer.css");
 
 /* Utilities */
+@import url("./utilities/root.css");
 @import url("./utilities/colors.css");
 @import url("./utilities/components.css");
 @import url("./utilities/fonts.css");
@@ -15,3 +16,4 @@
 /* Home */
 @import url("./home/hero.css");
 @import url("./home/catalog.css");
+@import url("./home/overview.css");
