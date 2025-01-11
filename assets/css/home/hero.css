@@ -4,12 +4,17 @@
   box-shadow: inset 0 -4rem var(--c0);
 }
 
+.hero__content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .hero__title::after {
   content: ".";
   color: var(--cp1);
 }
 
-.hero__picture {
+.content__right {
   height: 400px;
 }
 
@@ -18,4 +23,25 @@
   height: 100%;
   border-radius: 5px;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 0;
+    background: var(--c12);
+    box-shadow: inset 0 -8rem var(--c0);
+    background: var(--c12) url("../../images/dec/bottom-left.svg") no-repeat;
+    background-position: 1rem 31rem;
+  }
+
+  .hero__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content__right {
+    height: 700px;
+  }
 }

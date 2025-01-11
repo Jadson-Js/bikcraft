@@ -48,3 +48,10 @@
 .btn-primary:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
