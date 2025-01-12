@@ -1,0 +1,115 @@
+.bike {
+  display: grid;
+}
+
+.heroProducts {
+  background: var(--c-11) url("../../../images/dec/top-right.svg") no-repeat;
+  background-position: 100% 0;
+}
+
+.heroProducts__text {
+  text-transform: uppercase;
+}
+
+/* Products List */
+
+.bike {
+  padding: 0 1rem;
+}
+
+.bike__frame {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.bike__image {
+  max-height: 340px;
+}
+
+.bike__price {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background: var(--c-12);
+  padding: 0.5rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.bike__title {
+  position: relative;
+}
+
+.bike__title::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 0.5rem;
+  background: var(--cp-1);
+  top: -1rem;
+}
+
+.bike__content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.bikeInfo__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.bikeInfo__item {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bikeInfo__item img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.bikeInfo__item p {
+  text-transform: capitalize;
+}
+
+.bike__button {
+  transition: 0.3 ease;
+  padding-right: 3rem;
+  background: var(--cp-1) url("../../../images/icones/seta.svg") no-repeat;
+  background-position: calc(100% - 1rem);
+}
+
+.bike__button:hover {
+  background: var(--cp-2) url("../../../images/icones/seta.svg") no-repeat;
+  background-position: calc(100% - 1rem);
+}
+
+@media (min-width: 768px) {
+  .bike__content {
+    grid-template-columns: 1fr 200px;
+    align-items: end;
+  }
+
+  .bikeInfo__list {
+    margin-bottom: 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bike {
+    grid-template-columns: minmax(400px, 560px) minmax(400px, 560px);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bike__frame {
+    max-width: 560px;
+    max-height: 340px;
+    margin-bottom: 0;
+  }
+}
