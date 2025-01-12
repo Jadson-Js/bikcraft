@@ -1,5 +1,6 @@
 .bike {
   display: grid;
+  padding: 4rem 1rem;
 }
 
 .heroProducts {
@@ -13,17 +14,13 @@
 
 /* Products List */
 
-.bike {
-  padding: 0 1rem;
-}
-
 .bike__frame {
   position: relative;
   margin-bottom: 2rem;
 }
 
 .bike__image {
-  max-height: 340px;
+  max-height: 300px;
 }
 
 .bike__price {
@@ -105,11 +102,29 @@
     gap: 2rem;
     justify-content: center;
     align-items: center;
+
+    background: url("../../../images/dec/top-right.svg") calc(100% - 7rem)
+      calc(0% + 3rem) no-repeat;
+  }
+
+  .bike:nth-child(even) {
+    box-shadow: 30vw 0 0 0 var(--c-0) inset;
+    background: var(--c-12) url("../../../images/dec/top-right.svg")
+      calc(100% - 7rem) calc(0% + 3rem) no-repeat;
+  }
+
+  .bike:nth-child(even) .bike__title {
+    color: var(--c-0);
+  }
+
+  .bike:nth-child(even) .bike__text,
+  .bike:nth-child(even) .bikeInfo__item {
+    color: var(--c-5);
   }
 
   .bike__frame {
     max-width: 560px;
-    max-height: 340px;
+    max-height: 300px;
     margin-bottom: 0;
   }
 }
