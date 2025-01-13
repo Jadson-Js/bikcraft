@@ -1,0 +1,26 @@
+.bikeHero {
+  background: var(--c-11) url("../../../images/dec/top-right.svg") no-repeat;
+  background-position: calc(100% - 1rem) 1rem;
+}
+
+.bikeHero__title {
+  margin-bottom: 2rem;
+}
+
+.bikeHero__action {
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bikeHero__tags {
+  gap: 0.5rem;
+}
+
+.bikeHero__tags span {
+  background: var(--c-12);
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px;
+  align-items: center;
+  gap: 0.5rem;
+}
