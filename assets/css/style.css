@@ -24,3 +24,7 @@
 /* Products */
 
 @import url("./pages/products/products.css");
+
+/* Bike */
+
+@import url("./pages/bike/bikeHero.css");
