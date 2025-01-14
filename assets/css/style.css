@@ -27,6 +27,10 @@
 
 /* Bike */
 
-@import url("./pages/bike/action.css");
+@import url("./pages/bike/hero.css");
 @import url("./pages/bike/info.css");
 @import url("./pages/bike/action.css");
+
+/* Insurance */
+
+@import url("./pages/insurance/main.css");
