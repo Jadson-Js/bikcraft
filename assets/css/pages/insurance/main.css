@@ -1,3 +1,5 @@
+/* Hero */
+
 .insuranceHero {
   background: var(--c-11) url("../../../images/dec/top-right.svg") no-repeat
     calc(100% - 2rem) calc(0% + 2rem);
@@ -12,6 +14,8 @@
   text-transform: uppercase;
 }
 
+/* Vantagens */
+
 .insuranceInfo__list {
   border-radius: 5px;
   display: grid;
@@ -21,6 +25,57 @@
 
 .insuranceInfo__title {
   margin-bottom: 2rem;
+}
+
+/* Lista de perguntas */
+
+.insuranceQuestions__item {
+  padding: 1rem 1rem 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.insuranceQuestions__item:nth-child(odd) {
+  background: var(--c-1);
+}
+
+.insuranceQuestions__header {
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.insuranceQuestions__header::after {
+  content: "";
+  background: var(--cp-1);
+  position: absolute;
+  width: 0.8rem;
+  height: 0.5rem;
+  left: -1rem;
+  top: 35%;
+}
+
+.insuranceQuestions__icon {
+  transform: rotate(180deg); /* Inicialmente fechado */
+  transition: transform 0.3s ease;
+}
+
+.insuranceQuestions__text {
+  opacity: 0; /* Invisível */
+  max-height: 0; /* Altura inicial zero */
+  overflow: hidden; /* Esconde o conteúdo fora da área visível */
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Suaviza altura e opacidade */
+}
+
+.insuranceQuestions__header.active .insuranceQuestions__icon {
+  transform: rotate(0deg); /* Ícone girado ao abrir */
+}
+
+.insuranceQuestions__text.is-visible {
+  display: block;
+  opacity: 1; /* Visível */
+  max-height: 200px; /* Altura máxima para acomodar o conteúdo */
+  padding-top: 1rem;
 }
 
 @media (min-width: 768px) {
