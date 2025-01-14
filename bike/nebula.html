@@ -23,88 +23,165 @@
         </ul>
       </div>
     </nav>
-
-    <section class="section bg-11 bikeHero">
-      <div class="container">
-        <div>
-          <p class="font-m c-5">R$ 2499</p>
-          <h1 class="font-xll c-0 yellow-point">Nimbus Stark</h1>
-        </div>
-
-        <div>
-          <p class="font-m c-5">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-          <div>
-            <a href="./" class="btn-primary">Comprar agora</a>
-            <div>
-              <span class="font-ss c-6"><img src="../assets/images/icones/entrega.svg" alt="icone"> entrega em 5 dias</span>
-              <span class="font-ss c-6"><img src="../assets/images/icones/estoque.svg" alt="icone"> 18 em estoque</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </header>
 
   <main>
 
-    <section>
+    <div class="bike__grid bg-11">
+      <div class="bikeGrid__content--right">
+        <section class="section bikeHero">
+          <div class="container">
+            <div>
+              <p class="font-m c-5 mb-05">R$ 2499</p>
+              <h1 class="font-xll c-0 yellow-point bikeHero__title">Nimbus Stark</h1>
+            </div>
 
-      <div>
-        <h2>Informações</h2>
-        <ul class="font-s c-8 bg-12">
-          <li class="flex-row">
-            <img src="../assets/images/icones/eletrica.svg" alt="icone">
-            <p class="">Motor elétrico</p>
-          </li>
-          <li class="flex-row">
-            <img src="../assets/images/icones/carbono.svg" alt="icone">
-            <p class="">60 Km/h</p>
-          </li>
-          <li class="flex-row">
-            <img src="../assets/images/icones/velocidade.svg" alt="icone">
-            <p class="">Fibra de carbono</p>
-          </li>
-          <li class="flex-row">
-            <img src="../assets/images/icones/rastreador.svg" alt="icone">
-            <p class="">Rastreador</p>
-          </li>
-        </ul>
+            <div class="bikeHero__right">
+              <p class="font-m c-5 mb-2 bikeHero__text">
+                A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.
+              </p>
+
+              <div class="flex-row bikeHero__action">
+                <a href="./" class="btn-primary bikeHero__button">Comprar agora</a>
+
+                <div class="flex-column bikeHero__tags">
+                  <span class="flex-row font-ss c-6"><img src="../assets/images/icones/entrega.svg" alt="icone"> entrega em 5 dias</span>
+                  <span class="flex-row font-ss c-6"><img src="../assets/images/icones/estoque.svg" alt="icone"> 18 em estoque</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container  bikeInfo">
+          <section class="mb-2">
+            <h2 class="font-s c-0 mb-1 bikeInfo__title">Informações</h2>
+
+            <ul class="c-8 bg-12 bikeInfo__list1">
+              <li class="flex-column bikeInfo__item1">
+                <img src="../assets/images/icones/eletrica.svg" width="20px" height="20px" alt="icone">
+                <p class="font-s c-0">Motor elétrico</p>
+                <p class="font-ss c-5">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+              </li>
+              <li class="flex-column bikeInfo__item1">
+                <img src="../assets/images/icones/carbono.svg" width="20px" height="20px" alt="icone">
+                <p class="font-s c-0">Motor elétrico</p>
+                <p class="font-ss c-5">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+              </li>
+              <li class="flex-column bikeInfo__item1">
+                <img src="../assets/images/icones/velocidade.svg" width="20px" height="20px" alt="icone">
+                <p class="font-s c-0">Motor elétrico</p>
+                <p class="font-ss c-5">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+              </li>
+              <li class="flex-column bikeInfo__item1">
+                <img src="../assets/images/icones/rastreador.svg" width="20px" height="20px" alt="icone">
+                <p class="font-s c-0">Motor elétrico</p>
+                <p class="font-ss c-5">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="font-s c-0 mb-1 bikeInfo__title">Ficha técnica</h2>
+
+            <ul class="font-ss c-5 bg-12 flex-column bikeInfo__list2">
+              <li class="flex-row bikeInfo__item2">
+                <p class="">Peso</p>
+                <p class="">9 kg</p>
+              </li>
+              <li class="flex-row bikeInfo__item2">
+                <p class="">Altura</p>
+                <p class="">60 cm</p>
+              </li>
+              <li class="flex-row bikeInfo__item2">
+                <p class="">Largura</p>
+                <p class="">120 cm</p>
+              </li>
+              <li class="flex-row bikeInfo__item2">
+                <p class="">Profundidade</p>
+                <p class="">10 cm</p>
+              </li>
+              <li class="flex-row bikeInfo__item2">
+                <p class="">Marchas</p>
+                <p class="">16</p>
+              </li>
+              <li class="flex-row bikeInfo__item2">
+                <p class="">Roda</p>
+                <p class="">29</p>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
 
-      <div>
-        <h2>Ficha técnica</h2>
+      <div class="section  bikeGrid__content--left">
+        <div class="container bikeInfo__gallery">
+          <div class="bikeInfo__frame"><img class="img" src="../assets/images/bicicletas/nimbus.jpg" alt=""></div>
+          <div class="bikeInfo__frame"><img class="img" src="../assets/images/bicicletas/nimbus.jpg" alt=""></div>
+          <div class="bikeInfo__frame"><img class="img" src="../assets/images/bicicletas/nimbus.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
 
-        <ul class="bikeInfo__list font-s c-8 bg-12">
-          <li class="flex-row">
-            <p class="">Peso</p>
-            <p class="">9 Kg</p>
+    <section class="section catalog">
+
+      <div class="container">
+
+        <h2 class="catalog__title font-xll mb-3 c-11 yellow-point">Escolha a sua</h2>
+
+        <ul class="catalog__list flex-row">
+
+          <li class="catalog__card">
+            <a href="../bike/magic.html">
+              <div class="catalogCard__frame mb-1"><img class="catalogCard__image" src="../assets/images/bicicletas/magic-home.jpg" alt="Bicicleta nimbus"></div>
+
+              <div class="catalogCard__title font-ll flex-row mb-05">
+
+                <h3 class="c-11">Magic</h3>
+
+              </div>
+
+              <p class="font-m c-8">R$ 2499</p>
+            </a>
           </li>
-          <li class="flex-row">
-            <p class="">Altura</p>
-            <p class="">60 cm</p>
+
+          <li class="catalog__card">
+            <a href="../bike/nebula.html">
+              <div class="catalogCard__frame mb-1">
+                <img class="catalogCard__image" src="../assets/images/bicicletas/nebula-home.jpg" alt="Bicicleta nimbus">
+              </div>
+
+              <div class="catalogCard__title font-ll flex-row mb-05">
+                <h3 class="c-11">Nebula</h3>
+              </div>
+
+              <p class="font-m c-8">R$ 2499</p>
+            </a>
           </li>
-          <li class="flex-row">
-            <p class="">Largura</p>
-            <p class="">120 cm</p>
-          </li>
-          <li class="flex-row">
-            <p class="">Profundidade</p>
-            <p class="">10 cm</p>
-          </li>
-          <li class="flex-row">
-            <p class="">Marchas</p>
-            <p class="">16</p>
-          </li>
-          <li class="flex-row">
-            <p class="">Roda</p>
-            <p class="">29</p>
-          </li>
+
         </ul>
+
       </div>
 
-      <div><img class="img" src="../assets/images/bicicletas/nimbus.jpg" alt=""></div>
     </section>
 
+    <section class="bg-11 bikeAction">
+      <div class="container bikeAction__grid">
+        <div class="bikeAction__right">
+          <h2 class="font-xll c-0 mb-2">
+            Pedale mais tranquilo com o nosso <span class="cp-1">seguro.</span>
+          </h2>
+          <p class="font-m c-5 mb-2">
+            Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite diversos benefícios.
+          </p>
+          <a href="" class="btn-primary">Conheça mais</a>
+        </div>
+
+        <div class="mb-3 bikeAction__frame">
+          <img class="img bikeAction__image" src="../assets/images/fotos/seguros.jpg" alt="perfil">
+        </div>
+      </div>
+    </section>
 
   </main>
 

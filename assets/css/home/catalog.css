@@ -24,7 +24,7 @@
 }
 
 .catalogCard__frame {
-  width: 300px;
+  width: 18rem;
   height: 400px;
 }
 
@@ -41,8 +41,12 @@
     overflow: hidden;
   }
 
+  .catalog__card {
+    flex: 1;
+  }
+
   .catalogCard__frame {
     width: auto;
-    height: auto;
+    max-height: 300px;
   }
 }

@@ -27,5 +27,6 @@
 
 /* Bike */
 
-@import url("./pages/bike/bikeHero.css");
-@import url("./pages/bike/bikeInfo.css");
+@import url("./pages/bike/action.css");
+@import url("./pages/bike/info.css");
+@import url("./pages/bike/action.css");
