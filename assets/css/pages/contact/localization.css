@@ -1,0 +1,59 @@
+.localCard__list {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
+.localCard__item {
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  background: var(--c-0);
+}
+
+.localCard__bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+}
+
+.localCard__adress {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--c-2);
+}
+
+.localCard__contact {
+  padding-top: 1rem;
+}
+
+.localCard__time {
+  padding-left: 1.5rem;
+  background: url("../../../images/icones/horario.svg") no-repeat left;
+}
+
+@media (min-width: 768px) {
+  .localCard__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .localCard__bottom {
+    padding: 2rem;
+  }
+
+  .localCard__content {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .localCard__adress {
+    padding: 0 0 0 1rem;
+    border-bottom: none;
+    border-left: 2px solid var(--c-2);
+  }
+
+  .localCard__contact {
+    padding: 0 0 0 1rem;
+    border-bottom: none;
+    border-left: 2px solid var(--c-2);
+  }
+}
