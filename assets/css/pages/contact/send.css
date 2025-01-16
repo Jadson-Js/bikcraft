@@ -1,0 +1,92 @@
+.contact {
+  display: grid;
+}
+
+.contact__container--top {
+  padding: 0 1rem;
+  background: var(--c-11);
+  box-shadow: inset 0 -4rem 0 var(--c-1);
+}
+
+.contact__info {
+  border-radius: 5px;
+  padding: 1rem;
+  background: var(--c-12);
+}
+
+.contact__adress {
+  padding-left: 2rem;
+  background: var(--c-12) url("../../../images/icones/local.svg") no-repeat left
+    top;
+}
+
+.contact__email {
+  padding-left: 2rem;
+  background: var(--c-12) url("../../../images/icones/email.svg") no-repeat left
+    top;
+}
+
+.contact__phone {
+  padding-left: 2rem;
+  background: var(--c-12) url("../../../images/icones/telefone.svg") no-repeat
+    left top;
+}
+
+.social__links {
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact__container--bottom {
+  padding: 2rem 1rem;
+  background: var(--c-1);
+}
+
+.contact__form {
+  background: var(--c-0);
+  padding: 1rem;
+  border: 1px solid var(--c-0);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form__button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    grid-template-columns: minmax(320px, 450px) minmax(500px, 680px);
+    justify-content: center;
+    background: var(--c-11);
+    box-shadow: inset 0 -10rem 0 var(--c-1);
+  }
+
+  .contact__container--top {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    background: var(--c-12);
+  }
+
+  .contact__container--bottom {
+    padding: 0;
+    background: none;
+  }
+
+  .contact__info {
+    border-radius: 0px;
+    padding: 4rem 4rem;
+  }
+
+  .contact__form {
+    background: var(--c-0) url("../../../images/dec/bottom-right.svg")
+      calc(100% - 2rem) calc(100% - 2rem) no-repeat;
+  }
+
+  .form__button {
+    width: fit-content;
+  }
+}
