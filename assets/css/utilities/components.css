@@ -111,6 +111,12 @@
   flex: 1;
 }
 
+.form__group--checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .form__label {
   color: var(--c-11);
   font: 400 1rem/1.5 "Poppins", sans-serif;
@@ -124,8 +130,36 @@
   color: var(--c-7);
 }
 
-.form__input:focus {
-  border: 2px solid var(--cp-1);
+.form__input--checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  outline: none;
+  background: var(--c-1);
+  border: 1px solid var(--c-4);
+  border-radius: 5px;
+}
+
+.form__input--checkbox:checked {
+  background-color: var(--cp-1); /* Verde */
+  border-color: var(--cp-1);
+}
+
+.form__input--checkbox:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  border: 2px solid var(--cp-1); /* Cor da borda quando o input estiver em foco */
+  outline: var(--cp-1); /* Remove a borda padrão de foco */
 }
 
 @media (min-width: 768px) {

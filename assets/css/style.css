@@ -42,4 +42,7 @@
 
 /* Budget */
 
-@import url("./pages/budget/main.css");
+@import url("./pages/budget/left.css");
+@import url("./pages/budget/right.css");
+@import url("./pages/budget/insurance.css");
+@import url("./pages/budget/bike.css");

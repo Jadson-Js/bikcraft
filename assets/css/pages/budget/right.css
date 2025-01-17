@@ -1,0 +1,36 @@
+.budget__container--bottom {
+  padding: 0 1rem;
+  background: var(--c-1);
+}
+
+.budget__form {
+  background: var(--c-0);
+  padding: 1rem;
+  border: 1px solid var(--c-0);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.form__button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .budget__container--bottom {
+    padding: 0;
+    background: none;
+  }
+
+  .budget__form {
+    background: var(--c-0) url("../../../images/dec/bottom-right.svg")
+      calc(100% - 2rem) calc(100% - 2rem) no-repeat;
+    padding: 3rem;
+  }
+
+  .form__button {
+    width: fit-content;
+  }
+}

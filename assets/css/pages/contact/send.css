@@ -66,10 +66,10 @@
   }
 
   .contact__container--top {
-    background: none;
     box-shadow: none;
     padding: 0;
-    background: var(--c-12);
+    background: var(--c-12) url("../../../images/dec/bottom-left.svg") no-repeat
+      calc(0% + 2rem) calc(100% - 2rem);
   }
 
   .contact__container--bottom {

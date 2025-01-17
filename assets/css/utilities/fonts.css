@@ -1,5 +1,10 @@
-.font-ss {
+.font-ss,
+.font-ss-b {
   font: 400 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+.font-ss-b {
+  font-weight: 600;
 }
 
 .font-s {
